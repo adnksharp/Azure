@@ -1,4 +1,4 @@
-# Herramientas del [portal de Azure](https://portal.azure.com)
+# [Portal de Azure](https://portal.azure.com)
 
 ![](https://github.com/adnksharp/AWordpress/blob/base/screenshots/K_130.jpg?raw=true)
 
@@ -11,45 +11,65 @@ Para crear recursos en Azure es necesario:
 - Una región de Azure (de esto dependera la latencia de la conexión, pero no en todas las regiones se puede usar el mismo recurso).
 - Un nombre para el recurso.
 
-## Herramientas de Azure
-### [**ARM**](https://github.com/adnksharp/APARM)
-Crear plantillas de ARM. Estas plantillas permiten crear recursos en Azure con características específicas. Ideal para crear multiples recursos con una sola plantilla.
+## Herramientas usadas
+- [**Azure App Service Template**](https://github.com/adnksharp/Azure-AS-Template) (Plantilla de Azure App Service)
+- [**Azure CLI**](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) (Interfaz de línea de comandos de Azure)
+- [**Azure Tutorials**](https://github.com/adnksharp/Azure-tutorials) (Recursos de Azure usados para la certificación AZ-900)
+- [**rdesktop**](https://github.com/rdesktop/rdesktop) (Cliente de Escritorio Remoto para Linux)
+- [**Remmina**](https://remmina.org/) (Interfaz gráfica para rdesktop)
 
-### [**Wordpress**](https://github.com/adnksharp/AWordpress)
-Crear aplicaciones web de WordPress con Azure App Service. Lo que hace es crear una aplicación web escalable con recursos de Azure de forma rapida y sencilla.
+## Proyectos
+### App Service
+#### [**Template**](https://github.com/adnksharp/Azure-AS-WA)
+Uso de una [plantilla](https://github.com/adnksharp/Azure-AS-Template) para crear un sitio web en Azure App Service con Github Actions.
 
-### [**Virtual Machines**](https://github.com/adnksharp/AVM)
-Crear máquinas virtuales con Azure Virtual Machines. Es Importante la región de Azure, ya que no se puedencrear máquinas virtuales en todas las regiones.
+#### [**Wordpress**](https://github.com/adnksharp/Azure-AS-Wordpress-WA)
+Sitio web de Wordpress en Azure App Service.
 
-### [**App Service**](https://github.com/adnksharp/AAS)
-Crear aplicaciones web con Azure App Service.
+### Databases
+#### [**Cosmos DB**](https://github.com/adnksharp/Azure-CDB-Craft)
+Base de datos de Cosmos DB con NodeJS.
 
-### [**Functions**](https://github.com/adnksharp/AF)
-Crear una aplicación de funciones con Azure Functions.
+#### [**SQL Server**](https://github.com/adnksharp/Azure-SQL-Test)
+Uso de Azure Cloud Shell para crear una base de datos de SQL Server mediante [scripts](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals) de Microsoft.
 
-### [**Logic Apps**](https://github.com/adnksharp/ALA)
-Crear aplicaciones con Azure Logic Apps y Cognitive Services.
+### Functions
+#### [**NodeJS async**](https://github.com/adnksharp/Azure-F-Craft)
+Función de Azure con NodeJS para ejecutar código asíncrono.
 
-### [**Virtual Network**](https://github.com/adnksharp/AVN)
-Emparejar máquinas virtuales usando Azure Virtual Network y Azure Virtual Machines.
+### Logic Apps
+#### [**Twitter**](https://github.com/adnksharp/Azure-LA-Twitter-Bot)
+Bot de Twitter con Azure Logic Apps para leer tweets y almacenarlos en una tabla.
 
-### [**Storage**](https://github.com/adnksharp/AMSA)
-Uso de Azure Storage para almacenar datos y manejar:
+### Storage
+#### [**Container**](https://github.com/adnksharp/Azure-S-C-Craft)
+Almacenamiento de archivos en un contenedor de Azure Storage.
 
-- #### [**Contenedores**](https://github.com/adnksharp/AMSAc)
+#### [**Queue**](https://github.com/adnksharp/Azure-S-Q-Craft)
+Cola de Azure Storage para almacenar mensajes.
 
-- #### [**Colas**](https://github.com/adnksharp/AMSAq)
+#### [**Table**](https://github.com/adnksharp/Azure-S-T-Craft)
+Tabla de Azure Storage para almacenar datos.
 
-- #### [**Tablas**](https://github.com/adnksharp/AMSAt)
+### Machine Learning
+#### [**ML Studio**](https://github.com/adnksharp/Azure-ML-Craft)
+Creación de un entorno de Machine Learning en Azure Machine Learning Studio.
 
-### [**SQL Database**](https://github.com/adnksharp/ASQLD)
-Crear bases de datos SQL con Azure SQL Database y SQL Server.
+### Virtual Machines
+#### [**Links**](https://github.com/adnksharp/Azure-VM-Craft)
+Creación y conexión entre máquinas virtuales de con remmina en Azure.
 
-### [**Cosmos DB**](https://github.com/adnksharp/ACDB)
-Crear recursos de Azure Cosmos DB.
+### Virtual Networks
+#### [**Links**](https://github.com/adnksharp/Azure-VM-SSH-Links)
+Conexión entre máquinas virtuales de Azure usando redes virtuales y SSH.
 
-### [**Machine Learning**](https://github.com/adnksharp/AMLN)
-Crear aplicaciones de entornos de ejecución con Azure Machine Learning.
+### Templates
+#### [**ARM**](https://github.com/adnksharp/Azure-ARM-T-Craft)
+Creación de una plantilla de Microsoft Storage Account con Azure Resource Manager desde azure-cli.
 
-### **Monitoreo**
-Usando [Azure Monitor](https://github.com/adnksharp/AM) para monitorear nuestros recursos de Azure y [Azure Service Health](https://github.com/adnksharp/ASH) para monitorear servicios de Azure.
+### Others
+#### [**Health Alerts**](https://github.com/adnksharp/Azure-H-Alerts/tree/base)
+Alertas de servicios de Azure por correo electrónico con Azure Service Health.
+
+#### [**Monitor**](https://github.com/adnksharp/Azure-M)
+Monitorización de recursos de Azure con Azure Monitor y alertas por correo electrónico.
